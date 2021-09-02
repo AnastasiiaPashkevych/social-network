@@ -1,0 +1,18 @@
+.item {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 8px 0 rgb(26 15 63 / 8%);
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.like {
+  width: 30px;
+  height: 30px;
+}

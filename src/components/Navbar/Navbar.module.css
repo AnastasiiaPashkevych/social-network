@@ -1,0 +1,29 @@
+.nav {
+  grid-area: nav;
+  background: rgb(255, 0, 241);
+  background: linear-gradient(180deg, #5c27fe 0%, #c165dd 100%);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.link.active {
+  color: #400564;
+}
+
+.link:hover {
+  color: #400564;
+}
