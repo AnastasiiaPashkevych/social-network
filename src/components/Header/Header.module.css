@@ -3,6 +3,7 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
   grid-area: header;
   background: rgb(255, 0, 241);
   background: linear-gradient(180deg, #c165dd 0%, #5c27fe 100%);
