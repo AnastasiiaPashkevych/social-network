@@ -15,13 +15,8 @@
   gap: 10px;
 }
 
-.dialogs_items .active {
-  background: rgb(255, 0, 241);
-  background: linear-gradient(180deg, #5c27fe 0%, #c165dd 100%);
-}
-
-.dialog,
-.message {
+.message,
+.dialog {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 8px 0 rgb(26 15 63 / 8%);
@@ -35,11 +30,12 @@
   gap: 20px;
 }
 
-.messages {
-
+.dialogs_items .active {
+  background: rgb(255, 0, 241);
+  background: linear-gradient(180deg, #5c27fe 0%, #c165dd 100%);
 }
 
-.message {
+.messages {
 
 }
 
