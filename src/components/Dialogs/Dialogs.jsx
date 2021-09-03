@@ -29,7 +29,7 @@ function Dialogs() {
     {id: 5, name: 'Sveta'},
   ];
 
-  let messagesData = [
+  let messages = [
     {id: 1, message: 'Hi'},
     {id: 2, message: 'How are you?'},
     {id: 3, message: 'Fine'},
@@ -37,20 +37,21 @@ function Dialogs() {
     {id: 5, message: 'Yo'},
   ];
 
+  let dialogsElements = dialogsData.map((dialog) =>
+      <DialogItem name={dialog.name} id={dialog.id}/>
+  );
+
+  let messagesElements = messages.map((message) =>
+      <Message message={message.message}/>
+  );
+
   return (
       <div className={styles.dialogs}>
         <div className={styles.dialogs_items}>
-          <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
-          <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
-          <DialogItem name={dialogsData[2].name} id={dialogsData[2].id}/>
-          <DialogItem name={dialogsData[3].name} id={dialogsData[3].id}/>
-          <DialogItem name={dialogsData[4].name} id={dialogsData[4].id}/>
+          {dialogsElements}
         </div>
         <div className={styles.messages}>
-          <Message message={messagesData[0].message}/>
-          <Message message={messagesData[1].message}/>
-          <Message message={messagesData[2].message}/>
-          <Message message={messagesData[3].message}/>
+          {messagesElements}
         </div>
       </div>
   );
