@@ -14,6 +14,10 @@ a {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .app-wrapper {
   margin: 0 auto;
   padding: 10px;
