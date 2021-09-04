@@ -18,6 +18,18 @@ button {
   cursor: pointer;
 }
 
+.button {
+  background: #5c27fe;
+  background: linear-gradient(-45deg, #5c27fe 0%, #c165dd 100%);
+  box-shadow: 0 17px 40px 0 rgb(0 0 0 / 53%);
+  color: #fff;
+  font-size: 18px;
+  width: 160px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+}
+
 .app-wrapper {
   margin: 0 auto;
   padding: 10px;

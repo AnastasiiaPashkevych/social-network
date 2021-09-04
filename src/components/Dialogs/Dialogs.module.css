@@ -5,7 +5,8 @@
 }
 
 .dialogs_items,
-.messages {
+.messages,
+.messages_items {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 5px 8px 0 rgb(26 15 63 / 8%);
@@ -16,13 +17,15 @@
 }
 
 .message,
-.dialog {
+.dialog,
+.textarea {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 8px 0 rgb(26 15 63 / 8%);
   border-radius: 10px;
   color: #000;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: normal;
 
   display: flex;
   align-items: center;
@@ -45,4 +48,21 @@
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.textareaWrapper {
+  flex-basis: 80%;
+}
+
+.textarea {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.sendMessage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
