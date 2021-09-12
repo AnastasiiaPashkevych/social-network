@@ -1,6 +1,72 @@
+.users {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.user {
+  display: flex;
+  flex-basis: 49.5%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.photoButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
 .userPhoto {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.button {
+  background: #5c27fe;
+  background: linear-gradient(-45deg, #5c27fe 0%, #c165dd 100%);
+  box-shadow: 0 17px 40px 0 rgb(0 0 0 / 53%);
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 999px;
+}
+
+.buttonUnfollow {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.userName {
+
+}
+
+.userStatus {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.userCountry {
+
+}
+
+.userCity {
+  font-size: 16px;
 }

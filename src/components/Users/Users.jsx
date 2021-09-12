@@ -81,32 +81,32 @@ function Users(props) {
   }
 
   return (
-      <div>
+      <div className={styles.users}>
         {
-          props.users.map(u => <div key={u.id}>
-            <div>
+          props.users.map(u => <div className={styles.user} key={u.id}>
+            <div className={styles.photoButton}>
               <div>
                 <img src={u.photoUrl} alt="" className={styles.userPhoto}/>
               </div>
               <div>
                 {u.followed
-                    ? <button onClick={() => {
+                    ? <button className={`${styles.button} ${styles.buttonUnfollow}`} onClick={() => {
                       props.unfollow(u.id)
                     }}>Unfollow</button>
-                    : <button onClick={() => {
+                    : <button className={styles.button} onClick={() => {
                       props.follow(u.id)
                     }}>Follow</button>}
               </div>
             </div>
 
-            <div>
+            <div className={styles.userInfo}>
               <div>
                 <div>{u.fullName}</div>
-                <div>{u.status}</div>
+                <div className={styles.userStatus}>{u.status}</div>
               </div>
               <div>
                 <div>{u.location.country}</div>
-                <div>{u.location.city}</div>
+                <div className={styles.userCity}>{u.location.city}</div>
               </div>
             </div>
           </div>)
